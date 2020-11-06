@@ -46,6 +46,16 @@ async function id(email, senha) {
         if (!answer) {
             return id(email, senha)
         }
-        login(email, senha, answer)
+        delay(email, senha, answer)
+    })
+}
+
+async function delay(email, senha, id) {
+    rl.question(colors.cyan(`[4] `) + `Delay (ms): `, async (answer) => {
+        if(!answer) {
+            return delay(email, senha, id)
+        }
+
+        login(email, senha, id, answer)
     })
 }
