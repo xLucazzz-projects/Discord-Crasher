@@ -12,6 +12,7 @@ const rl = readline.createInterface({
 email()
 
 async function email() {
+    process.title = `[DISCORD CRASHER] | by xLucazzz`
     console.clear()
     console.log(colors.red(`
      ▄████▄   ██▀███   ▄▄▄        ██████  ██░ ██ ▓█████  ██▀███  
